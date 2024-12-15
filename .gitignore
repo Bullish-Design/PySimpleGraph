@@ -1,14 +1,41 @@
-# general things to ignore
-build/
-dist/
-*.egg-info/
-*.egg
-*.py[cod]
-__pycache__/
-*.so
-*~
+# Devenv
+.devenv*
+devenv.local.nix
+devenv.lock
 
-# due to using tox and pytest
-.tox
-.cache
-.pytest_cache
+# direnv
+.direnv
+
+# pre-commit
+.pre-commit-config.yaml
+
+# Env
+.env
+.envrc
+*.yaml
+*.nix
+
+
+# Logs
+*log/*
+.log
+*logs*
+log/**
+*code_output*
+
+
+# Misc
+**.egg-info**
+*.egg-info*
+*code_output/*
+**/__pycache__/**
+**.pyc
+# Devenv
+.devenv*
+devenv.local.nix
+
+# direnv
+.direnv
+
+# pre-commit
+.pre-commit-config.yaml

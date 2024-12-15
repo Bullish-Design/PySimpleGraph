@@ -1,6 +1,46 @@
+[project]
+name = "PySimpleGraph"
+version = "2.1.0"
+description = "A simple graph database in SQLite"
+readme = "README.md"
+requires-python = ">=3.6, <4"
+authors = [
+    { name = "Denis Papathanasiou" },
+    { name = "Bullish Design" }
+
+]
+#dependencies = [
+#    "graphviz",
+#    "Jinja2"
+#]
+
+[project.urls]
+"Bug Reports" = "https://github.com/dpapathanasiou/simple-graph-pypi/issues"
+"Source" = "https://github.com/dpapathanasiou/simple-graph-pypi/tree/main/src/simple_graph_sqlite"
+
+[project.optional-dependencies]
+test = [
+    "pytest"
+]
+
+#dynamic = ["version", "dependencies"]
+
+[project.scripts]
+#main = "PySimpleGraph.src.main:main"
+
+[tool.setuptools.dynamic]
+dependencies = { file = "requirements.txt" }
+
 [build-system]
 requires = [
     "setuptools>=42",
     "wheel"
 ]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"simple_graph_sqlite" = "src/simple_graph_sqlite"}
+packages = ["simple_graph_sqlite"]
+
+[tool.setuptools.package-data]
+simple_graph_sqlite = ["sql/*"]
