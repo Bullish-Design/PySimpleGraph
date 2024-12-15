@@ -1,0 +1,11 @@
+digraph {
+	3 [label="name Steve Jobs\ntype ['person', 'designer', 'founder']"]
+	2 -> 3
+	3 -> 1 [label="action founded"]
+	2 [label="name Steve Wozniak\ntype ['person', 'engineer', 'founder']\nnew_prop value"]
+	2 -> 1 [label="action founded"]
+	1 [label="name Apple Computer Company\ntype ['company', 'start-up']\nfounded April 1, 1976"]
+	1 -> 4 [label="action divested\namount 800\ndate April 12, 1976"]
+	4 -> 1 [label="action founded"]
+	5 -> 1 [label="action invested\nequity 80000\ndebt 170000"]
+}
