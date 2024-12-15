@@ -39,8 +39,8 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-package-dir = {"simple_graph_sqlite" = "src/simple_graph_sqlite"}
-packages = ["simple_graph_sqlite"]
+package-dir = {"pysimplegraph" = "src/simple_graph_sqlite"}
+packages = ["pysimplegraph"]
 
 [tool.setuptools.package-data]
-simple_graph_sqlite = ["sql/*"]
+pysimplegraph = ["sql/*"]
