@@ -1,1 +1,1 @@
-from base import GraphDB, Node, Edge
+from pysimplegraph.base import GraphDB, Node, Edge
